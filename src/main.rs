@@ -58,7 +58,7 @@ fn main() {
         if let Ok(height) = matches.value_of("height").unwrap().parse::<u32>() {
             height
         } else {
-            exit(1, Some("width must be a positive number"));
+            exit(1, Some("height must be a positive number"));
             unreachable!()
         }
     };
