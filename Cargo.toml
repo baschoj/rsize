@@ -1,0 +1,9 @@
+[package]
+name = "rsize"
+version = "1.0.0"
+authors = ["Bruce Schojan <bruce@basjr.com>"]
+edition = "2018"
+
+[dependencies]
+image = "0.20"
+clap = "2.32"
