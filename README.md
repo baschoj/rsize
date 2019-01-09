@@ -1,4 +1,4 @@
-# rize
+# rsize
 
 Simple application that resizes images.
 
