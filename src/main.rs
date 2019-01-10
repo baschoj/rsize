@@ -13,12 +13,12 @@ fn main() {
 
     let input: Vec<&str> = matches.value_of("input").unwrap().split(".").collect();
 
-    if input.len() != 2 {
+    if input.len() < 2 {
         exit(1, Some("input file name must have an image extension"));
     }
 
-    let filename = input[0];
-    let ext = input[1];
+    let filename = input[0..input.len() - 1].join(".");
+    let ext = input[input.len() - 1];
 
     let image = match image::open(format!("{}.{}", filename, ext)) {
         Err(e) => match e {
